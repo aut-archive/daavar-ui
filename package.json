@@ -1,7 +1,7 @@
 {
   "name": "daavar-ui",
   "version": "1.0.0",
-  "description": "UI for Daavar judging system based on DomJudge Edit",
+  "description": "UI for Daavar judging system based on DomJudge",
   "author": "Parham Alvani <parham.alvani@gmail.com>",
   "private": true,
   "scripts": {
