@@ -1,4 +1,13 @@
-# daavar-ui
+# Daavar Judge
+
+<p align="center">
+<a href="https://circleci.com/gh/daavar/daavar-ui">
+    <img alt="" src="https://img.shields.io/circleci/project/github/daavar/daavar-ui/master.svg?style=flat-square">
+</a>
+<a href="https://standardjs.com">
+    <img alt="" src="https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square">
+</a>
+</p>
 
 ## Introduction
 
