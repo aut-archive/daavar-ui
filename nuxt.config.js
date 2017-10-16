@@ -13,6 +13,22 @@ module.exports = {
     ]
   },
 
+  mode: 'spa',
+
+  build: {
+    extractCSS: true
+  },
+
+  loading: {
+    color: '#1976d2'
+  },
+
+  loadingIndicator: {
+    name: 'pulse',
+    color: '#1976d2',
+    background: '#303030'
+  },
+
   plugins: [
     '~/plugins/vuetify.js'
   ],
@@ -28,11 +44,5 @@ module.exports = {
 
   proxy: {
     '/api': process.env.DJ_API || 'https://www.domjudge.org/demoweb/'
-  },
-
-  loading: { color: '#3B8070' },
-
-  build: {
-    extractCSS: true
   }
 }
