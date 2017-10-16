@@ -1,16 +1,17 @@
-
 module.exports = {
   head: {
-    title: 'daavar-ui',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'UI for Daavar judging system based on DomJudge Edit' }
-    ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' }
     ]
+  },
+
+  manifest: {
+    lang: 'en',
+    name: 'Daavar Judge',
+    short_name: 'daavar',
+    description: 'Daavar judging system based on DomJudge',
+    theme_color: '#1976d2'
   },
 
   mode: 'spa',
@@ -39,7 +40,8 @@ module.exports = {
 
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/proxy'
+    '@nuxtjs/proxy',
+    '@nuxtjs/pwa'
   ],
 
   proxy: {

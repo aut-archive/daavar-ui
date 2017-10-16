@@ -1,7 +1,7 @@
 <template>
   <v-footer app>
     <span>
-      <a href="https://github.com/daavar/daavar-ui" target="_blank" rel="noopener">Daavar</a>
+      <a href="https://github.com/daavar/daavar-ui" target="_blank" rel="noopener">Daavar</a> Judge
       &nbsp;|&nbsp; Powered by
       <a href="https://www.domjudge.org" target="_blank" rel="noopener">Domjudge</a>
       and

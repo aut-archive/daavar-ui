@@ -1,8 +1,11 @@
 {
   "name": "daavar-ui",
   "version": "1.0.0",
-  "description": "UI for Daavar judging system based on DomJudge",
-  "author": "Parham Alvani <parham.alvani@gmail.com>",
+  "description": "Daavar judging system based on DomJudge",
+  "contributes": [
+    "Parham Alvani <parham.alvani@gmail.com>",
+    "Pooya Parsa <pooya@pi0.ir>"
+  ],
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -13,6 +16,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^4.4.0",
     "@nuxtjs/proxy": "^1.1.2",
+    "@nuxtjs/pwa": "^1.0.2",
     "nuxt": "^1.0.0-rc11",
     "vuetify": "^0.16.1"
   },
