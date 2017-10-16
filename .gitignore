@@ -13,3 +13,6 @@ dist
 # Ignore lock files
 yarn.lock
 package-lock.json
+
+sw*
+workbox*
