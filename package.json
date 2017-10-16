@@ -13,7 +13,8 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "generate-demo": "API_URL=https://daavar.000webhostapp.com/?csurl=https://www.domjudge.org/demoweb/api/ nuxt generate",
-    "surge": "surge -d https://daavar.surge.sh dist"
+    "surge": "surge -d https://daavar.surge.sh dist",
+    "test": "true"
   },
   "dependencies": {
     "@nuxtjs/axios": "^4.4.0",
