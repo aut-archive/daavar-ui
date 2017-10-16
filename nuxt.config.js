@@ -1,8 +1,5 @@
 
 module.exports = {
-  /*
-  ** Headers of the page
-  */
   head: {
     title: 'daavar-ui',
     meta: [
@@ -15,34 +12,27 @@ module.exports = {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' }
     ]
   },
-  plugins: ['~/plugins/vuetify.js'],
+
+  plugins: [
+    '~/plugins/vuetify.js'
+  ],
+
   css: [
     '~/assets/style/app.styl'
   ],
-  /*
-  ** Customize the progress bar color
-  */
+
+  modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/proxy'
+  ],
+
+  proxy: {
+    '/api': process.env.DJ_API || 'https://www.domjudge.org/demoweb/'
+  },
+
   loading: { color: '#3B8070' },
-  /*
-  ** Build configuration
-  */
+
   build: {
-    vendor: [
-      '~/plugins/vuetify.js'
-    ],
-    extractCSS: true,
-    /*
-    ** Run ESLint on save
-    */
-    extend (config, ctx) {
-      if (ctx.dev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
-      }
-    }
+    extractCSS: true
   }
 }
